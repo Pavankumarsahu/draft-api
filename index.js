@@ -6,12 +6,12 @@ const mongoose = require('mongoose');
 const { saveLoan, getLoan, updateInstallment } = require('./loan.js');
 const cors = require('cors')
 // Connect to MongoDB
-app.use(cors());
-
 // Define a mongoose schema for your data
 
 
 const app = express();
+app.use(cors());
+
 
 app.use(bodyParser.json());
 
